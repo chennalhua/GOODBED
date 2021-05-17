@@ -1,0 +1,80 @@
+.logo a{
+    background: url('../../images/logo/logo.svg') no-repeat;
+    width:180px;
+    height:47px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-item{
+    padding:0 25px;
+}
+
+
+header{
+    margin-bottom:100px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom:180px;
+    }
+    .header-bg{
+        height: 500px;
+    }
+    .header-list{
+        margin: -65px 0;
+        li span{
+            writing-mode: vertical-lr ;
+            letter-spacing:18px;
+            font-size: 24px;
+            color:$light;
+            position: relative;
+            z-index: 2;
+        }
+        .bg-mask::before{
+            content:'';
+            height: 100%;
+            background:$primary;
+            opacity:0.5;
+            position:absolute;
+            top:0;
+            left:0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+        .bg-mask:hover::before , .bg-mask.active::before{
+            background:$secondary;
+        }
+    }
+}
+
+
+//subscription
+.subscription{
+    img{
+        width: 40px;
+        height:40px;
+    }
+    input{
+        width:252px;
+        outline: none !important; 
+    }
+    label,button{
+        width:64px;
+    }
+}
+
+//footer
+footer{
+    .footer-logo{
+        width:170px;
+        margin-left: -15px;
+    }
+}
+
+.active{
+    background-color: $web-blue-light !important;
+    border:$web-blue-light !important;
+    color:$primary !important;
+}

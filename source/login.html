@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+
+<body>
+<!-- nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+  <div class="container">
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1 class="logo m-0 d-flex "><a class="navbar-brand p-0" href="index.html">GOODBAD 眠眠。</a></h1>
+    <a class="nav-link d-block d-lg-none" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="product.html">寵愛的眠</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html">登入</a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- main -->
+<main class="container mt-3 mb-lg-5">
+    <div class="row flex-lg-row-reverse">
+        <div class="col-12 bg-primary py-4 d-block d-lg-none">
+            <h2 class="text-center text-light">會員登入</h2>
+        </div>
+        <div class="col-12 col-lg-6 py-4 bg-web-blue-light social-link m-0 my-lg-4">
+            <div class="container">
+                <h2 class="text-center mt-3 mb-5 font-weight-normal text-primary">—— 連結社群帳號 ——</h2>
+                <ul class="row no-gutters social-list list-unstyled">
+                    <li class="col-4 col-lg-12 mb-lg-3">
+                        <a href="#" class="btn btn-light w-100 rounded-0 border py-3">
+                            <i class="fab fa-facebook-f mr-2"></i></a>
+                    </li>
+                    <li class="col-4 col-lg-12 mb-lg-3">
+                        <a href="#" class="btn btn-light w-100 rounded-0 border py-3">
+                            <i class="fab fa-google mr-2"></i></a>
+                    </li>
+                    <li class="col-4 col-lg-12">
+                        <a href="#" class="btn btn-light w-100 rounded-0 border py-3">
+                            YAHOO!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 bg-primary p-0 d-lg-flex flex-lg-column justify-content-end">
+            <h2 class="text-center text-light d-none d-lg-block">會員登入</h2>
+            <form class="container p-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label for="loginUser" class="input-group-text bg-web-blue-light p-4 rounded-0"><i class="fa fa-user"></i></label>
+                    </div>
+                    <input type="text" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="電子信箱/手機號碼" id="loginUser">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label for="loginPassword" class="input-group-text bg-web-blue-light p-4 rounded-0"><i class="fa fa-key"></i></label>
+                    </div>
+                    <input type="text" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="請輸入使用者密碼" id="loginPassword">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Check">
+                    <label class="form-check-label text-web-blue-light" for="Check">記住我</label>
+                </div>
+            </form>
+            <a href="#" class="d-block bg-secondary text-primary w-100 py-3"><p class="h3 text-center">登入帳號</p></a>
+        </div>
+    </div>
+</main>
+
+
+<!-- 訂閱 -->
+<section class="bg-primary subscription py-4 py-lg-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-4">
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+          <img src="./images/logo/logo-secondary.svg" alt="GOODBAD 眠眠。 logo">
+          <p class="text-light h4 m-0">訂閱我的好眠郵件</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="input-group d-flex justify-content-lg-end justify-content-center">
+          <label for="mail" class="bg-web-blue-light m-0 text-center d-flex justify-content-center align-items-center py-3"><i class="fas fa-envelope text-primary"></i></label>
+          <input type="email" class="p-3 rounded-0 bg-web-blue-light border-0 " id="mail" placeholder="輸入你的電子郵件">
+          <button class="btn btn-secondary rounded-0"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="bg-web-blue-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4 d-flex justify-content-lg-between">
+        <div class="d-lg-flex flex-column justify-content-lg-between">
+          <a href="index.html" class="footer-logo d-block mb-3"><img src="./images/logo/logo-text.svg" alt="GOODBAD 眠眠。"></a>
+          <ul class="list-unstyled">
+            <li><a href="tel:+886-07-12345678">07-1234-5678</a></li>
+            <li><a href="goodbed@email.com">goodbed@email.com</a></li>
+            <li class="text-primary">800 高雄市新興區眠眠路 520 號</li>
+          </ul>
+        </div>
+        <h4 class="text-primary slogan d-none d-lg-block p-0 m-0">想要有好的睡眠品質<br><span>是不需要任何理由的。</span></h4>
+      </div>
+      <div class="col-12 d-block d-lg-flex justify-content-lg-between">
+        <ul class="list-unstyled d-flex m-0">
+          <li class="mr-2"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a></li>
+        </ul>
+        <p class="m-0">&copy 2021 GOODBAD 眠眠。 All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- js -->
+<script src="javascripts/vendor.js"></script>
+</body>
+</html>

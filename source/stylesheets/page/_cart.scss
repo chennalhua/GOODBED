@@ -1,0 +1,61 @@
+.cart-pro-bg{
+    min-height: 150px;
+}
+
+.cart-product-list{
+    @include media-breakpoint-up(lg) {
+        li:first-child{
+            border-bottom: 1px solid $web-blue-light;
+        }
+    }
+}
+
+.order-info{
+    @include media-breakpoint-up(lg) {
+        background:$primary;
+        li{
+            color: $light;
+        }
+        h4{
+            background:$primary !important;
+            color: $light !important;
+            border-bottom: 1px solid $light;
+        }
+    }
+}
+
+.num-box{
+    a,input{
+        width:33%;
+        border:1px solid $web-blue-light;
+    }
+    /* 去除 input的 type="number" 時出現的上下圖標 */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .num-minus{
+        border-top-left-radius:30px ;
+        border-bottom-left-radius:30px ;
+        &:hover{
+            background:$secondary;
+            color:$light;
+        }
+    }
+    .num-add{
+        border-top-right-radius:30px ;
+        border-bottom-right-radius:30px ;
+        &:hover{
+            background:$secondary;
+            color:$light;
+        }
+    }
+}
+
+.single-product-total{
+    border-top: 1px solid $web-blue-light;
+    border-bottom: 1px solid $web-blue-light;
+}
+
+
+
