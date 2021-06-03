@@ -8309,7 +8309,7 @@ footer .footer-logo {
   min-height: 150px; }
 
 @media (min-width: 992px) {
-  .cart-product-list li:first-child {
+  .cart-product-list li {
     border-bottom: 1px solid #CAD0D7; } }
 
 @media (min-width: 992px) {

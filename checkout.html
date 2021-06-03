@@ -31,7 +31,10 @@
           <a class="nav-link" href="login.html">登入</a>
         </li>
         <li class="nav-item d-none d-lg-block">
-          <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a class="nav-link position-relative" href="cart.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-primary position-absolute cart-length" style="top:0"></span>
+          </a>
         </li>
       </ul>
     </div>
@@ -55,47 +58,33 @@
               </div>
             </div>
           </div>
-          <form class="container p-4 text-web-blue-light transport">
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="transportFamilyName" class="h4">姓氏</label>
-                <input type="text" class="form-control bg-web-blue-light rounded-0" id="transportFamilyName" placeholder="陳">
-              </div>
-              <div class="form-group col-6">
-                <label for="transportName" class="h4">名字</label>
-                <input type="text" class="form-control bg-web-blue-light rounded-0" id="transportName" placeholder="眠眠">
-              </div>
+          <form class="needs-validation px-4 text-light" novalidate>
+            <div class="col-12 mb-3">
+              <label for="customerName">姓名</label>
+              <input type="text" class="form-control" id="customerName" value="" required placeholder="請輸入姓名">
             </div>
-            <div class="form-group">
-              <label for="transportPhone" class="h4">電話</label>
-              <input type="tel" class="form-control bg-web-blue-light rounded-0" id="transportPhone" placeholder="0912-345-678">
+            <div class="col-12 mb-3">
+              <label for="customerPhone">電話</label>
+              <input type="text" class="form-control" id="customerPhone" value="" required placeholder="請輸入電話">
             </div>
-            <div class="form-row">
-              <div class="form-group col-12 m-0">
-                <label for="transportAdd" class="h4">地址</label>
-              </div>
-              <div class="form-group col-6">
-                <select id="transportAdd" class="form-control bg-web-blue-light rounded-0">
-                  <option selected value="高雄市">高雄市</option>
-                  <option value="台北市">台北市</option>
-                  <option value="台中市">台中市</option>
-                  <option value="台南市">台南市</option>
-                </select>
-              </div>
-              <div class="form-group col-6">
-                <select class="form-control bg-web-blue-light rounded-0">
-                  <option selected value="鳳山區">鳳山區</option>
-                  <option value="三民區">三民區</option>
-                  <option value="新興區">新興區</option>
-                  <option value="前鎮區">前鎮區</option>
-                </select>
-              </div>
-              <div class="form-group col-12">
-                <input type="text" class="form-control bg-web-blue-light rounded-0" placeholder="眠眠路 520 號">
-              </div>
+            <div class="col-12 mb-3">
+              <label for="customerEmail">Email</label>
+              <input type="email" class="form-control" id="customerEmail" value="" required placeholder="請輸入Email">
+            </div>
+            <div class="col-12 mb-3">
+              <label for="customerAddress">寄送地址</label>
+              <input type="text" class="form-control" id="customerAddress" value="" required placeholder="請輸入寄送地址">
+            </div>
+            <div class="col-12 mb-3">
+              <label for="tradeWay">交易方式</label>
+              <select id="tradeWay" class="form-control" name="交易方式">
+                <option value="ATM" selected="">ATM</option>
+                <option value="信用卡">信用卡</option>
+                <option value="超商付款">超商付款</option>
+            </select>
             </div>
           </form>
-          <a href="checkout1.html" class="d-block bg-secondary text-primary w-100 py-3 h5 text-center m-0">下一步</a>
+          <a href="#" class="d-block bg-secondary text-primary w-100 py-3 h5 text-center m-0 orderInfoBtn" >下一步</a>
         </div>
         <div class="col-lg-4 d-none d-lg-block">
           <div class="row">
@@ -106,7 +95,7 @@
                   <ul class="list-unstyled text-primary order-list">
                     <li class="d-flex justify-content-between">
                         <p>小計</p>
-                        <p>NT $18,780</p>
+                        <p class="subtotal"></p>
                     </li>
                     <li class="d-flex justify-content-between">
                         <p>運費</p>
@@ -114,7 +103,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                         <p class="h5">總計</p>
-                        <p class="h5">NT $19,080</p>
+                        <p class="h5 cart-total"></p>
                     </li>
                   </ul>
                 </div>
@@ -124,25 +113,8 @@
               <div class="card">
                 <div class="card-header text-center bg-web-blue-light text-primary"><p class="h3 m-0">購物清單</p></div>
                 <div class="card-body px-3">
-                  <ul class="list-unstyled text-primary ">
-                    <li class="d-flex justify-content-between row align-items-center mb-4">
-                        <div class="col-4">
-                          <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/tTQQggBAfhl0vEeM7WmTwij1JbAwC7MBD2TSyjHbZHvBjnLU5tOtoGszOmODOEu6DRjzdjIpcEzeCCkmRWaL8JDJwaaWglER7P3V4JXKT7FT5gm0UL45CaHpSVlEXbKK.png" alt="Charles 雙人床" class="w-100">
-                        </div>
-                        <div class="col-8">
-                          <p class="h5">Charles 雙人床</p>
-                          <p class="m-0">NT$ 15,000</p>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between row  align-items-center">
-                      <div class="col-4">
-                        <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png" alt="Louvre 單人床" class="w-100">
-                      </div>
-                      <div class="col-8">
-                        <p class="h5">Louvre 單人床</p>
-                        <p class="m-0">NT$ 3,780</p>
-                      </div>
-                    </li>
+                  <ul class="list-unstyled text-primary cartPro-list">
+                    
                   </ul>
                 </div>
               </div>
@@ -202,6 +174,10 @@
 
 
 <!-- js -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="javascripts/vendor.js"></script>
+<script src="javascripts/config.js"></script>
+<script src="javascripts/checkout.js"></script>
+
 </body>
 </html>

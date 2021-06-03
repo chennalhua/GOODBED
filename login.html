@@ -69,20 +69,20 @@
                     <div class="input-group-prepend">
                       <label for="loginUser" class="input-group-text bg-web-blue-light p-4 rounded-0"><i class="fa fa-user"></i></label>
                     </div>
-                    <input type="text" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="電子信箱/手機號碼" id="loginUser">
+                    <input type="email" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="電子信箱" id="loginUser">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <label for="loginPassword" class="input-group-text bg-web-blue-light p-4 rounded-0"><i class="fa fa-key"></i></label>
                     </div>
-                    <input type="text" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="請輸入使用者密碼" id="loginPassword">
+                    <input type="password" class="form-control bg-web-blue-light h-100 p-4 rounded-0" placeholder="請輸入使用者密碼" id="loginPassword">
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="Check">
                     <label class="form-check-label text-web-blue-light" for="Check">記住我</label>
                 </div>
             </form>
-            <a href="#" class="d-block bg-secondary text-primary w-100 py-3"><p class="h3 text-center">登入帳號</p></a>
+            <a href="#" class="d-block bg-secondary text-primary w-100 py-3 text-center h3 m-0" id="loginBtn">登入帳號</a>
         </div>
     </div>
 </main>
@@ -138,5 +138,7 @@
 
 <!-- js -->
 <script src="javascripts/vendor.js"></script>
+<script src="javascripts/config.js"></script>
+<script src="javascripts/login.js"></script>
 </body>
 </html>

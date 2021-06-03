@@ -11,7 +11,8 @@
 </head>
 
 <body>
-<!-- nav -->
+<div id="app">
+  <!-- nav -->
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
   <div class="container">
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,10 @@
           <a class="nav-link" href="login.html">登入</a>
         </li>
         <li class="nav-item d-none d-lg-block">
-          <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a class="nav-link position-relative" href="cart.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-primary position-absolute cart-length" style="top:0"></span>
+          </a>
         </li>
       </ul>
     </div>
@@ -43,58 +47,6 @@
         <div class="col-12 col-lg-8">
             <h4 class="text-primary text-center bg-web-blue-light py-3">您的購物車</h4>
             <ul class="list-unstyled cart-product-list">
-                <li class="py-3">
-                   <div class="row mb-3">
-                       <div class="col-7 col-lg-3">
-                            <div class="cart-pro-bg bg-cover" style="background-image: url('https://hexschool-api.s3.us-west-2.amazonaws.com/custom/tTQQggBAfhl0vEeM7WmTwij1JbAwC7MBD2TSyjHbZHvBjnLU5tOtoGszOmODOEu6DRjzdjIpcEzeCCkmRWaL8JDJwaaWglER7P3V4JXKT7FT5gm0UL45CaHpSVlEXbKK.png');"></div>                            
-                       </div>
-                       <div class="col-5 col-lg-9 text-primary d-flex flex-column justify-content-between flex-lg-row align-items-center">
-                            <div>
-                                <h5>Charles 雙人床</h5>
-                                <p>NT$ 15,000</p>
-                            </div>
-                            <div class="row num-box text-center align-items-center no-gutters justify-content-end">
-                                <div class="d-flex col-12 col-lg-5">
-                                    <a href="#" class="d-block p-3 num-minus"><i class="fas fa-minus"></i></a>
-                                    <input type="number" min="1" value="1" class="d-block p-3 text-center">
-                                    <a href="#" class="d-block p-3 num-add"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="col-lg-4 d-flex align-items-center">
-                                    <p class="h5 text-primary d-none d-lg-block">NT $ 15,000</p>
-                                    <a href="#" class="d-none d-lg-block num-del border-0"><i class="fas fa-trash"></i></a>
-                                </div>
-                                
-                            </div>
-                        </div> 
-                   </div> 
-                    <p class="h5 text-primary text-right single-product-total py-3 d-lg-none">NT $ 15,000</p>
-                </li>
-                <li class="py-3">
-                    <div class="row mb-3">
-                        <div class="col-7 col-lg-3">
-                             <div class="cart-pro-bg bg-cover" style="background-image: url('https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png');"></div>                            
-                        </div>
-                        <div class="col-5 col-lg-9 text-primary d-flex flex-column justify-content-between flex-lg-row align-items-center">
-                             <div>
-                                 <h5>Louvre 單人床</h5>
-                                 <p>NT$ 3,780</p>
-                             </div>
-                             <div class="row num-box text-center align-items-center no-gutters justify-content-end">
-                                 <div class="d-flex col-12 col-lg-5">
-                                     <a href="#" class="d-block p-3 num-minus"><i class="fas fa-minus"></i></a>
-                                     <input type="number" min="1" value="1" class="d-block p-3 text-center">
-                                     <a href="#" class="d-block p-3 num-add"><i class="fas fa-plus"></i></a>
-                                 </div>
-                                 <div class="col-lg-4 d-flex align-items-center">
-                                     <p class="h5 text-primary d-none d-lg-block">NT$ 3,780</p>
-                                     <a href="#" class="d-none d-lg-block num-del border-0"><i class="fas fa-trash"></i></a>
-                                 </div>
-                                 
-                             </div>
-                         </div> 
-                    </div> 
-                     <p class="h5 text-primary text-right single-product-total py-3 d-lg-none">NT$ 3,780</p>
-                 </li>
             </ul>
         </div>
         <div class="col-12 col-lg-4">
@@ -103,7 +55,7 @@
                 <ul class="list-unstyled text-primary order-list">
                     <li class="d-flex justify-content-between">
                         <p>小計</p>
-                        <p>NT $18,780</p>
+                        <p class="subtotal">NT $18,780</p>
                     </li>
                     <li class="d-flex justify-content-between">
                         <p>運費</p>
@@ -111,15 +63,14 @@
                     </li>
                     <li class="d-flex justify-content-between">
                         <p class="h5">總計</p>
-                        <p class="h5">NT $19,080</p>
+                        <p class="h5 cart-total">NT $19,080</p>
                     </li>
                 </ul>
             </div>
-            <a href="checkout.html" class="d-block bg-secondary text-primary py-3 text-center h5 m-0">結帳</a>
+            <a href="checkout.html" class="d-block bg-secondary text-primary py-3 text-center h5 m-0 checkout-btn">結帳</a>
         </div>
     </div>
 </main>
-
 
 <!-- 訂閱 -->
 <section class="bg-primary subscription py-4 py-lg-5">
@@ -166,10 +117,14 @@
     </div>
   </div>
 </footer>
+</div>
 
 
 
 <!-- js -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="javascripts/vendor.js"></script>
+<script src="javascripts/config.js"></script>
+<script src="javascripts/cart.js"></script>
 </body>
 </html>
