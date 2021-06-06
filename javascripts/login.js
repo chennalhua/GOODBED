@@ -16,7 +16,7 @@ const app = {
         e.preventDefault();
         if(app.el.loginUser.value === '' || app.el.loginPassword.value === ''){
             alert('請完整輸入帳號密碼！');
-            alert('測試用：帳號 test@gmail.com、密碼：12345。即可登入後台');
+            alert('測試用：test@gmail.com、12345。即可登入後台');
             return
         }else if(app.el.loginUser.value === app.data.user.username && app.el.loginPassword.value === app.data.user.password){
             document.cookie = `GoodToken=${token};`;
