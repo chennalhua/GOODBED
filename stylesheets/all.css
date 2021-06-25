@@ -8181,6 +8181,9 @@ a.text-web-gray:hover, a.text-web-gray:focus {
 a {
   text-decoration: none !important; }
 
+body, html {
+  font-family: "Microsoft JhengHei"; }
+
 .logo a {
   background: url("../images/logo/logo.svg") no-repeat;
   width: 180px;
